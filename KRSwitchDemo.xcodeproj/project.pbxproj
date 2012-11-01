@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E992BF11642B2A500E58703 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E992BF01642B2A500E58703 /* UIKit.framework */; };
+		8E992BF31642B2A500E58703 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E992BF21642B2A500E58703 /* Foundation.framework */; };
+		8E992BF51642B2A500E58703 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E992BF41642B2A500E58703 /* CoreGraphics.framework */; };
+		8E992BFB1642B2A500E58703 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E992BF91642B2A500E58703 /* InfoPlist.strings */; };
+		8E992BFD1642B2A500E58703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E992BFC1642B2A500E58703 /* main.m */; };
+		8E992C011642B2A500E58703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E992C001642B2A500E58703 /* AppDelegate.m */; };
+		8E992C031642B2A500E58703 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C021642B2A500E58703 /* Default.png */; };
+		8E992C051642B2A500E58703 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C041642B2A500E58703 /* Default@2x.png */; };
+		8E992C071642B2A500E58703 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C061642B2A500E58703 /* Default-568h@2x.png */; };
+		8E992C0A1642B2A500E58703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E992C091642B2A500E58703 /* ViewController.m */; };
+		8E992C0D1642B2A500E58703 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C0B1642B2A500E58703 /* ViewController.xib */; };
+		8E992C271642B2BF00E58703 /* btn_switchBar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C151642B2BF00E58703 /* btn_switchBar_bg.png */; };
+		8E992C281642B2BF00E58703 /* btn_switchBar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C161642B2BF00E58703 /* btn_switchBar_bg@2x.png */; };
+		8E992C291642B2BF00E58703 /* btn_switchBar_handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C171642B2BF00E58703 /* btn_switchBar_handle.png */; };
+		8E992C2A1642B2BF00E58703 /* btn_switchBar_handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C181642B2BF00E58703 /* btn_switchBar_handle@2x.png */; };
+		8E992C2B1642B2BF00E58703 /* btn_switchBar_handle_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C191642B2BF00E58703 /* btn_switchBar_handle_1.png */; };
+		8E992C2C1642B2BF00E58703 /* btn_switchBar_handle_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C1A1642B2BF00E58703 /* btn_switchBar_handle_1@2x.png */; };
+		8E992C2D1642B2BF00E58703 /* btn_switchBar_handle_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C1B1642B2BF00E58703 /* btn_switchBar_handle_off.png */; };
+		8E992C2E1642B2BF00E58703 /* btn_switchBar_handle_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C1C1642B2BF00E58703 /* btn_switchBar_handle_off@2x.png */; };
+		8E992C2F1642B2BF00E58703 /* btn_switchBar_handle_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C1D1642B2BF00E58703 /* btn_switchBar_handle_on.png */; };
+		8E992C301642B2BF00E58703 /* btn_switchBar_handle_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C1E1642B2BF00E58703 /* btn_switchBar_handle_on@2x.png */; };
+		8E992C311642B2BF00E58703 /* switchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C1F1642B2BF00E58703 /* switchBackground.png */; };
+		8E992C321642B2BF00E58703 /* switchBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C201642B2BF00E58703 /* switchBackground@2x.png */; };
+		8E992C331642B2BF00E58703 /* switchHandle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C211642B2BF00E58703 /* switchHandle.png */; };
+		8E992C341642B2BF00E58703 /* switchHandle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E992C221642B2BF00E58703 /* switchHandle@2x.png */; };
+		8E992C351642B2BF00E58703 /* KRSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E992C241642B2BF00E58703 /* KRSwitch.m */; };
+		8E992C361642B2BF00E58703 /* KRSwitchTurns.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E992C261642B2BF00E58703 /* KRSwitchTurns.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E992BEC1642B2A500E58703 /* KRSwitchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRSwitchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E992BF01642B2A500E58703 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E992BF21642B2A500E58703 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E992BF41642B2A500E58703 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E992BF81642B2A500E58703 /* KRSwitchDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRSwitchDemo-Info.plist"; sourceTree = "<group>"; };
+		8E992BFA1642B2A500E58703 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E992BFC1642B2A500E58703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E992BFE1642B2A500E58703 /* KRSwitchDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRSwitchDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8E992BFF1642B2A500E58703 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E992C001642B2A500E58703 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E992C021642B2A500E58703 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8E992C041642B2A500E58703 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8E992C061642B2A500E58703 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8E992C081642B2A500E58703 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E992C091642B2A500E58703 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E992C0C1642B2A500E58703 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8E992C151642B2BF00E58703 /* btn_switchBar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_switchBar_bg.png; sourceTree = "<group>"; };
+		8E992C161642B2BF00E58703 /* btn_switchBar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_switchBar_bg@2x.png"; sourceTree = "<group>"; };
+		8E992C171642B2BF00E58703 /* btn_switchBar_handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_switchBar_handle.png; sourceTree = "<group>"; };
+		8E992C181642B2BF00E58703 /* btn_switchBar_handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_switchBar_handle@2x.png"; sourceTree = "<group>"; };
+		8E992C191642B2BF00E58703 /* btn_switchBar_handle_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_switchBar_handle_1.png; sourceTree = "<group>"; };
+		8E992C1A1642B2BF00E58703 /* btn_switchBar_handle_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_switchBar_handle_1@2x.png"; sourceTree = "<group>"; };
+		8E992C1B1642B2BF00E58703 /* btn_switchBar_handle_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_switchBar_handle_off.png; sourceTree = "<group>"; };
+		8E992C1C1642B2BF00E58703 /* btn_switchBar_handle_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_switchBar_handle_off@2x.png"; sourceTree = "<group>"; };
+		8E992C1D1642B2BF00E58703 /* btn_switchBar_handle_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_switchBar_handle_on.png; sourceTree = "<group>"; };
+		8E992C1E1642B2BF00E58703 /* btn_switchBar_handle_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_switchBar_handle_on@2x.png"; sourceTree = "<group>"; };
+		8E992C1F1642B2BF00E58703 /* switchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBackground.png; sourceTree = "<group>"; };
+		8E992C201642B2BF00E58703 /* switchBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchBackground@2x.png"; sourceTree = "<group>"; };
+		8E992C211642B2BF00E58703 /* switchHandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchHandle.png; sourceTree = "<group>"; };
+		8E992C221642B2BF00E58703 /* switchHandle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchHandle@2x.png"; sourceTree = "<group>"; };
+		8E992C231642B2BF00E58703 /* KRSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRSwitch.h; sourceTree = "<group>"; };
+		8E992C241642B2BF00E58703 /* KRSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRSwitch.m; sourceTree = "<group>"; };
+		8E992C251642B2BF00E58703 /* KRSwitchTurns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRSwitchTurns.h; sourceTree = "<group>"; };
+		8E992C261642B2BF00E58703 /* KRSwitchTurns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRSwitchTurns.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E992BE91642B2A500E58703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E992BF11642B2A500E58703 /* UIKit.framework in Frameworks */,
+				8E992BF31642B2A500E58703 /* Foundation.framework in Frameworks */,
+				8E992BF51642B2A500E58703 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E992BE11642B2A500E58703 = {
+			isa = PBXGroup;
+			children = (
+				8E992C131642B2BF00E58703 /* KRSwitch */,
+				8E992BF61642B2A500E58703 /* KRSwitchDemo */,
+				8E992BF71642B2A500E58703 /* Supporting Files */,
+				8E992BEF1642B2A500E58703 /* Frameworks */,
+				8E992BED1642B2A500E58703 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E992BED1642B2A500E58703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E992BEC1642B2A500E58703 /* KRSwitchDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E992BEF1642B2A500E58703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E992BF01642B2A500E58703 /* UIKit.framework */,
+				8E992BF21642B2A500E58703 /* Foundation.framework */,
+				8E992BF41642B2A500E58703 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E992BF61642B2A500E58703 /* KRSwitchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8E992BFF1642B2A500E58703 /* AppDelegate.h */,
+				8E992C001642B2A500E58703 /* AppDelegate.m */,
+				8E992C081642B2A500E58703 /* ViewController.h */,
+				8E992C091642B2A500E58703 /* ViewController.m */,
+				8E992C0B1642B2A500E58703 /* ViewController.xib */,
+			);
+			path = KRSwitchDemo;
+			sourceTree = "<group>";
+		};
+		8E992BF71642B2A500E58703 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E992BF81642B2A500E58703 /* KRSwitchDemo-Info.plist */,
+				8E992BF91642B2A500E58703 /* InfoPlist.strings */,
+				8E992BFC1642B2A500E58703 /* main.m */,
+				8E992BFE1642B2A500E58703 /* KRSwitchDemo-Prefix.pch */,
+				8E992C021642B2A500E58703 /* Default.png */,
+				8E992C041642B2A500E58703 /* Default@2x.png */,
+				8E992C061642B2A500E58703 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = KRSwitchDemo;
+			sourceTree = "<group>";
+		};
+		8E992C131642B2BF00E58703 /* KRSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				8E992C141642B2BF00E58703 /* Images */,
+				8E992C231642B2BF00E58703 /* KRSwitch.h */,
+				8E992C241642B2BF00E58703 /* KRSwitch.m */,
+				8E992C251642B2BF00E58703 /* KRSwitchTurns.h */,
+				8E992C261642B2BF00E58703 /* KRSwitchTurns.m */,
+			);
+			name = KRSwitch;
+			path = KRSwitchDemo/KRSwitch;
+			sourceTree = "<group>";
+		};
+		8E992C141642B2BF00E58703 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8E992C151642B2BF00E58703 /* btn_switchBar_bg.png */,
+				8E992C161642B2BF00E58703 /* btn_switchBar_bg@2x.png */,
+				8E992C171642B2BF00E58703 /* btn_switchBar_handle.png */,
+				8E992C181642B2BF00E58703 /* btn_switchBar_handle@2x.png */,
+				8E992C191642B2BF00E58703 /* btn_switchBar_handle_1.png */,
+				8E992C1A1642B2BF00E58703 /* btn_switchBar_handle_1@2x.png */,
+				8E992C1B1642B2BF00E58703 /* btn_switchBar_handle_off.png */,
+				8E992C1C1642B2BF00E58703 /* btn_switchBar_handle_off@2x.png */,
+				8E992C1D1642B2BF00E58703 /* btn_switchBar_handle_on.png */,
+				8E992C1E1642B2BF00E58703 /* btn_switchBar_handle_on@2x.png */,
+				8E992C1F1642B2BF00E58703 /* switchBackground.png */,
+				8E992C201642B2BF00E58703 /* switchBackground@2x.png */,
+				8E992C211642B2BF00E58703 /* switchHandle.png */,
+				8E992C221642B2BF00E58703 /* switchHandle@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E992BEB1642B2A500E58703 /* KRSwitchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E992C101642B2A500E58703 /* Build configuration list for PBXNativeTarget "KRSwitchDemo" */;
+			buildPhases = (
+				8E992BE81642B2A500E58703 /* Sources */,
+				8E992BE91642B2A500E58703 /* Frameworks */,
+				8E992BEA1642B2A500E58703 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRSwitchDemo;
+			productName = KRSwitchDemo;
+			productReference = 8E992BEC1642B2A500E58703 /* KRSwitchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E992BE31642B2A500E58703 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kuo-Ming Lin";
+			};
+			buildConfigurationList = 8E992BE61642B2A500E58703 /* Build configuration list for PBXProject "KRSwitchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E992BE11642B2A500E58703;
+			productRefGroup = 8E992BED1642B2A500E58703 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E992BEB1642B2A500E58703 /* KRSwitchDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E992BEA1642B2A500E58703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E992BFB1642B2A500E58703 /* InfoPlist.strings in Resources */,
+				8E992C031642B2A500E58703 /* Default.png in Resources */,
+				8E992C051642B2A500E58703 /* Default@2x.png in Resources */,
+				8E992C071642B2A500E58703 /* Default-568h@2x.png in Resources */,
+				8E992C0D1642B2A500E58703 /* ViewController.xib in Resources */,
+				8E992C271642B2BF00E58703 /* btn_switchBar_bg.png in Resources */,
+				8E992C281642B2BF00E58703 /* btn_switchBar_bg@2x.png in Resources */,
+				8E992C291642B2BF00E58703 /* btn_switchBar_handle.png in Resources */,
+				8E992C2A1642B2BF00E58703 /* btn_switchBar_handle@2x.png in Resources */,
+				8E992C2B1642B2BF00E58703 /* btn_switchBar_handle_1.png in Resources */,
+				8E992C2C1642B2BF00E58703 /* btn_switchBar_handle_1@2x.png in Resources */,
+				8E992C2D1642B2BF00E58703 /* btn_switchBar_handle_off.png in Resources */,
+				8E992C2E1642B2BF00E58703 /* btn_switchBar_handle_off@2x.png in Resources */,
+				8E992C2F1642B2BF00E58703 /* btn_switchBar_handle_on.png in Resources */,
+				8E992C301642B2BF00E58703 /* btn_switchBar_handle_on@2x.png in Resources */,
+				8E992C311642B2BF00E58703 /* switchBackground.png in Resources */,
+				8E992C321642B2BF00E58703 /* switchBackground@2x.png in Resources */,
+				8E992C331642B2BF00E58703 /* switchHandle.png in Resources */,
+				8E992C341642B2BF00E58703 /* switchHandle@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E992BE81642B2A500E58703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E992BFD1642B2A500E58703 /* main.m in Sources */,
+				8E992C011642B2A500E58703 /* AppDelegate.m in Sources */,
+				8E992C0A1642B2A500E58703 /* ViewController.m in Sources */,
+				8E992C351642B2BF00E58703 /* KRSwitch.m in Sources */,
+				8E992C361642B2BF00E58703 /* KRSwitchTurns.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E992BF91642B2A500E58703 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E992BFA1642B2A500E58703 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E992C0B1642B2A500E58703 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E992C0C1642B2A500E58703 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E992C0E1642B2A500E58703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E992C0F1642B2A500E58703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E992C111642B2A500E58703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRSwitchDemo/KRSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "KRSwitchDemo/KRSwitchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E992C121642B2A500E58703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRSwitchDemo/KRSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "KRSwitchDemo/KRSwitchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E992BE61642B2A500E58703 /* Build configuration list for PBXProject "KRSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E992C0E1642B2A500E58703 /* Debug */,
+				8E992C0F1642B2A500E58703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E992C101642B2A500E58703 /* Build configuration list for PBXNativeTarget "KRSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E992C111642B2A500E58703 /* Debug */,
+				8E992C121642B2A500E58703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E992BE31642B2A500E58703 /* Project object */;
+}
