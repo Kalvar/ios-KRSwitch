@@ -96,10 +96,18 @@
 @synthesize _backgroundImageName, _hoverImageName, _offImageName, _onImageName, _handleImageName;
 
 -(void)dealloc{
-    [sliderOff release], self.sliderOff = nil;
-    [sliderOn release], self.sliderOn = nil;
-    [knobImage release], self.knobImage = nil;
-    [knobImagePressed release], self.knobImagePressed = nil;
+    /*
+     * 要先 = nil, 才能 release。
+     */
+    self.sliderOff        = nil;
+    self.sliderOn         = nil;
+    self.knobImage        = nil;
+    self.knobImagePressed = nil;
+    
+    [sliderOff release];
+    [sliderOn release];
+    [knobImage release];
+    [knobImagePressed release];
     [endDate release];
     
     [_backgroundImageName release];
