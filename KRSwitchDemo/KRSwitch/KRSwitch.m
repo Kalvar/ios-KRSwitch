@@ -32,6 +32,7 @@
 
 - (void)regenerateImages;
 - (void)performSwitchToPercent:(float)toPercent;
+
 @end
 
 @interface KRSwitch (fixPrivate)
@@ -45,15 +46,18 @@
 
 @implementation KRSwitch (fixPrivate)
 
--(UIImage *)_imageNamedNoCache:(NSString *)_name{
+-(UIImage *)_imageNamedNoCache:(NSString *)_name
+{
     return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], _name]];
 }
 
--(void)_exchangeOnOffImage{
+-(void)_exchangeOnOffImage
+{
     [self _drawOnOffButtonImageName:( self.on ? self._onImageName : self._offImageName )];
 }
 
--(void)_drawOnOffButtonImageName:(NSString *)_buttonImageName{
+-(void)_drawOnOffButtonImageName:(NSString *)_buttonImageName
+{
     //起迄時的按鈕樣式 ( 56 x 26 )
     UIImage *knobTmpImage = [UIImage imageNamed:_buttonImageName];
     UIImage *knobImageStretch = [knobTmpImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
@@ -61,9 +65,12 @@
     CGSize _knobImageSize = knobTmpImage.size;
     CGRect knobRect = CGRectMake(0, 0, _knobImageSize.width, _knobImageSize.height);
     //重繪按鈕圖
-    if(UIGraphicsBeginImageContextWithOptions != NULL){
+    if(UIGraphicsBeginImageContextWithOptions != NULL)
+    {
         UIGraphicsBeginImageContextWithOptions(knobRect.size, NO, scale);
-    }else{
+    }
+    else
+    {
         UIGraphicsBeginImageContext(knobRect.size);
     }
     [knobImageStretch drawInRect:knobRect];
@@ -71,15 +78,20 @@
     UIGraphicsEndImageContext();
 }
 
--(void)_drawHoveringOnOffButtonImageName:(NSString *)_aHoverImageName{
-    //Hover 作用中的按鈕樣式 ( switchHandle.png : 24 x 24 )
+-(void)_drawHoveringOnOffButtonImageName:(NSString *)_aHoverImageName
+{
+    //Hover 作用中的按鈕樣式 ( switch_bar_handler_icon.png : 24 x 24 )
     UIImage *knobTmpImage = [self _imageNamedNoCache:_aHoverImageName];
     UIImage *knobImageStretch = [knobTmpImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     CGRect knobRect = CGRectMake(0, 0, knobWidth, [knobImageStretch size].height);
     if(UIGraphicsBeginImageContextWithOptions != NULL)
+    {
         UIGraphicsBeginImageContextWithOptions(knobRect.size, NO, scale);
+    }
     else
+    {
         UIGraphicsBeginImageContext(knobRect.size);
+    }
     [knobImageStretch drawInRect:knobRect];
     self.knobImagePressed = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -95,48 +107,48 @@
 @synthesize _buttonWidth, _buttonHeight;
 @synthesize _backgroundImageName, _hoverImageName, _offImageName, _onImageName, _handleImageName;
 
--(void)dealloc{
-    /*
-     * 要先 = nil, 才能 release。
-     */
-    self.sliderOff        = nil;
-    self.sliderOn         = nil;
-    self.knobImage        = nil;
-    self.knobImagePressed = nil;
-    
-    [sliderOff release];
-    [sliderOn release];
-    [knobImage release];
-    [knobImagePressed release];
-    [endDate release];
-    
-    [_backgroundImageName release];
-    [_hoverImageName release];
-    [_offImageName release];
-    [_onImageName release];
-    [_handleImageName release];
-    
-    [super dealloc];
-}
 
 //初始化所有參數與圖片
 - (void)initCommon
 {
     
-    if( !self._buttonHeight ) self._buttonHeight = 25.0f;
-    if( !self._buttonWidth ) self._buttonWidth = 56.0f;
-    if( !self._onImageName ) self._onImageName = @"btn_switchBar_handle_on.png";
-    if( !self._offImageName ) self._offImageName = @"btn_switchBar_handle_off.png";
-    if( !self._backgroundImageName ) self._backgroundImageName = @"btn_switchBar_bg.png";
-    if( !self._hoverImageName ) self._hoverImageName = @"btn_switchBar_handle_1.png";
-    if( !self._handleImageName ) self._handleImageName = @"btn_switchBar_handle.png";
-    
+    if( !self._buttonHeight )
+    {
+        self._buttonHeight = 25.0f;
+    }
+    if( !self._buttonWidth )
+    {
+        self._buttonWidth = 56.0f;
+    }
+    if( !self._onImageName )
+    {
+        self._onImageName = @"switch_bar_handle_on.png";
+    }
+    if( !self._offImageName )
+    {
+        self._offImageName = @"switch_bar_handle_off.png";
+    }
+    if( !self._backgroundImageName )
+    {
+        self._backgroundImageName = @"switch_bar_bg.png";
+    }
+    if( !self._hoverImageName )
+    {
+        self._hoverImageName = @"switch_bar_handle_1.png";
+    }
+    if( !self._handleImageName )
+    {
+        self._handleImageName = @"switch_bar_handle.png";
+    }
     //按鈕圖片的高度
     drawHeight = self._buttonHeight;
 	/* It seems that the animation length was changed in iOS 4.0 to animate the switch slower. */
-	if(kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_4_0){
+	if(kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_4_0)
+    {
 		animationDuration = 0.25;
-	} else {
+	}
+    else
+    {
 		animationDuration = 0.175;
 	}
 	self.contentMode = UIViewContentModeRedraw;
@@ -144,14 +156,18 @@
 	[self setKnobWidth:self._buttonWidth];
 	//[self regenerateImages];
 	//設定背景圖
-    //sliderOff = [UIImage imageNamed:@"btn_switchBar_bg.png"];
+    //sliderOff = [UIImage imageNamed:@"switch_bar_bg.png"];
     self.sliderOff = [self _imageNamedNoCache:self._backgroundImageName];
     //依螢幕解析度做縮放
     if([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
+    {
 		scale = [[UIScreen mainScreen] scale];
-	else
-		scale = 1.0;
-	self.opaque = NO;
+    }
+    else
+    {
+		scale = 1.0f;
+	}
+    self.opaque = NO;
 }
 
 - (id)initWithFrame:(CGRect)aRect
@@ -178,7 +194,7 @@
 	endcapWidth = roundf(knobWidth / 2.0);
     //起迄時的按鈕樣式 ( 56 x 26 )
     [self _drawOnOffButtonImageName:self._handleImageName];
-    //Hover 作用中的按鈕樣式 ( 舊圖是 switchHandle.png : 24 x 24 )
+    //Hover 作用中的按鈕樣式 ( 舊圖是 switch_bar_handler_icon.png : 24 x 24 )
     [self _drawHoveringOnOffButtonImageName:self._hoverImageName];
 }
 
@@ -194,7 +210,7 @@
 - (void)regenerateImages
 {
 	CGRect boundsRect = self.bounds;
-    UIImage* onSwitchImage = [self _imageNamedNoCache:@"switchBackground.png"];
+    UIImage* onSwitchImage = [self _imageNamedNoCache:@"switch_bar_background.png"];
     UIImage *sliderOnBase = [onSwitchImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 12)];
     CGRect sliderOnRect = boundsRect;
 	sliderOnRect.size.height = [sliderOnBase size].height;

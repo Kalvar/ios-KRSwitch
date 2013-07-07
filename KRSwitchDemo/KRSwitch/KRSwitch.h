@@ -27,7 +27,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface KRSwitch : UIControl {
+@interface KRSwitch : UIControl
+{
 	UIImage *knobImage;
 	UIImage *knobImagePressed;
 	
@@ -57,19 +58,19 @@
     NSString *_handleImageName;
 }
 
-@property (nonatomic, retain) UIImage *sliderOff;
-@property (nonatomic, retain) UIImage *sliderOn;
-@property (nonatomic, retain) UIImage *knobImage;
-@property (nonatomic, retain) UIImage *knobImagePressed;
-@property (nonatomic, retain) NSDate *endDate;
+@property (nonatomic, strong) UIImage *sliderOff;
+@property (nonatomic, strong) UIImage *sliderOn;
+@property (nonatomic, strong) UIImage *knobImage;
+@property (nonatomic, strong) UIImage *knobImagePressed;
+@property (nonatomic, strong) NSDate *endDate;
 
 @property (nonatomic, assign) CGFloat _buttonHeight;
 @property (nonatomic, assign) CGFloat _buttonWidth;
-@property (nonatomic, retain) NSString *_onImageName;
-@property (nonatomic, retain) NSString *_offImageName;
-@property (nonatomic, retain) NSString *_hoverImageName;
-@property (nonatomic, retain) NSString *_backgroundImageName;
-@property (nonatomic, retain) NSString *_handleImageName;
+@property (nonatomic, strong) NSString *_onImageName;
+@property (nonatomic, strong) NSString *_offImageName;
+@property (nonatomic, strong) NSString *_hoverImageName;
+@property (nonatomic, strong) NSString *_backgroundImageName;
+@property (nonatomic, strong) NSString *_handleImageName;
 
 /* Common initialization method for initWithFrame: and initWithCoder: */
 - (void)initCommon;
